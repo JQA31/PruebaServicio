@@ -9,12 +9,17 @@ import { ServiceCochesService } from 'src/app/Services/service-coches.service';
 export class CocheComponent implements OnInit{
 
   constructor(private _serviceCoches: ServiceCochesService){}
+  public coches:Array<{marca:string, modelo:string, velocidad:number, imagen:string}> = [];
 
   ngOnInit(): void {
-    console.log(this._serviceCoches.retornarCoches());
+    this.coches = this._serviceCoches.retornarCoches();
   }
 
   mostrarCochesConsola(){
     console.log(this._serviceCoches.retornarCoches());
+  }
+
+  mostrarCoches(){
+    return this._serviceCoches.retornarCoches();
   }
 }

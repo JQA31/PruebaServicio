@@ -1,2 +1,11 @@
-<p>coche works!</p>
-<button (click)="mostrarCochesConsola()">Mostrar Coches en Consola</button>
+<div class="grid-caja">
+  <div *ngFor="let coche of coches" class="caja-coche">
+    <img [src]="coche.imagen" alt="{{ coche.marca }}" class="coche-imagen">
+
+    <div class="coche-contenido">
+      <h2>{{ coche.marca }}</h2>
+      <p><strong>Modelo:</strong> {{ coche.modelo }}</p>
+      <p><strong>Velocidad:</strong> {{ coche.velocidad }}</p>
+    </div>
+  </div>
+</div>

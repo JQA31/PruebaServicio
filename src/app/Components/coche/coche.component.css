@@ -1,0 +1,47 @@
+/* Contenedor principal en cuadrícula */
+.grid-caja {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas exactas */
+  gap: 24px; /* Espacio entre las cajas */
+  padding: 20px;
+}
+
+/* Estilo de la caja individual */
+.caja-coche {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  border: 1px solid #eee;
+}
+
+.caja-coche:hover {
+  transform: translateY(-8px); /* Elevación suave al pasar el mouse */
+}
+
+/* Imagen del coche */
+.coche-imagen {
+  width: 100%;
+  height: 160px;
+  object-fit: cover; /* Recorta la imagen para que encaje sin deformarse */
+}
+
+/* Contenedor del texto */
+.coche-contenido {
+  padding: 16px;
+}
+
+.coche-contenido h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #222;
+}
+
+.coche-contenido p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
