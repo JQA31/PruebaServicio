@@ -1,0 +1,25 @@
+<form class="form-caja">
+  <div class="campo">
+    <label for="marca">Marca</label>
+    <input type="text" name="marca" id="marca" [(ngModel)]="marca" placeholder="Ej: Toyota">
+  </div>
+
+  <div class="campo">
+    <label for="modelo">Modelo</label>
+    <input type="text" name="modelo" id="modelo" [(ngModel)]="modelo" placeholder="Ej: Corolla">
+  </div>
+
+  <div class="campo">
+    <label for="precio">Precio</label>
+    <input type="number" name="precio" id="precio" [(ngModel)]="precio">
+  </div>
+
+  <div class="campo">
+    <label for="imagen">Imagen URL</label>
+    <input type="text" name="imagen" id="imagen" [(ngModel)]="imagen">
+  </div>
+
+  <button type="submit" (click)="addCoche()" class="boton-guardar">Guardar Coche</button>
+  <button type="submit" (click)="eliminarCoche()" class="boton-guardar">Eliminar Coche</button>
+  <button type="submit" (click)="modificarCoche()" class="boton-guardar">Modificar Coche</button>
+</form>

@@ -1,0 +1,57 @@
+/* Contenedor principal del formulario */
+.form-caja {
+  max-width: 400px;
+  margin: 20px;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: auto;
+}
+
+/* Grupos de etiqueta e input */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.campo label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.campo input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.campo input:focus {
+  border-color: #666; /* Color de borde al escribir */
+}
+
+/* Botón de envío */
+.boton-guardar {
+  background-color: #222;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+}
+
+.boton-guardar:hover {
+  background-color: #444;
+}
+

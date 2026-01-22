@@ -13,7 +13,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.2s ease-in-out;
-  border: 1px solid #eee;
 }
 
 .caja-coche:hover {
@@ -30,12 +29,14 @@
 /* Contenedor del texto */
 .coche-contenido {
   padding: 16px;
+  background-color: rgb(141, 141, 150);
 }
 
 .coche-contenido h2 {
   margin-top: 0;
   font-size: 1.25rem;
-  color: #222;
+  color: #222222;
+
 }
 
 .coche-contenido p {
@@ -43,5 +44,6 @@
   font-size: 0.9rem;
   color: #555;
 }
+
 
 

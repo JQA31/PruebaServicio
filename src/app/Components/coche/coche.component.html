@@ -5,7 +5,8 @@
     <div class="coche-contenido">
       <h2>{{ coche.marca }}</h2>
       <p><strong>Modelo:</strong> {{ coche.modelo }}</p>
-      <p><strong>Velocidad:</strong> {{ coche.velocidad }}</p>
+      <p><strong>Precio:</strong> {{ coche.precio | currency: 'EUR' }}</p>
     </div>
   </div>
 </div>
+

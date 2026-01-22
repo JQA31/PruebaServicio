@@ -1,0 +1,33 @@
+/* Contenedor principal del menú */
+.menu-nav {
+  background-color: #222; /* Fondo oscuro para que resalte */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center; /* Centra los botones */
+  gap: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+/* Estilo de los enlaces/botones de navegación */
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+/* Efecto al pasar el ratón */
+.nav-link:hover {
+  background-color: #444;
+  border-color: #666;
+}
+
+/* Clase para resaltar la página donde estamos (opcional) */
+.active-link {
+  background-color: #fff;
+  color: #222 !important;
+}
